@@ -49,6 +49,10 @@ app.get('/api/destinations/:id', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+    res.send('Server Wisata Semarang Berjalan dengan Baik! 🚀 Silakan akses /api/destinations');
+});
+
 // Jalankan Server
 app.listen(port, () => {
     console.log(`Server Wisata Semarang berjalan di port ${port}`);
